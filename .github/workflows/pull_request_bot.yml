@@ -3,7 +3,7 @@ name: Translate strings.xml to French
 on:
   pull_request:
     paths:
-      - '**/res/values/strings.xml' # Verifica mudanças no arquivo strings.xml
+      - '**/res/values/strings.xml'
 
 jobs:
   translate:
@@ -21,7 +21,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install googletrans==4.0.0-rc1 # Usaremos o Googletrans para a tradução
+        pip install googletrans==4.0.0-rc1 
 
     - name: Translate strings.xml
       run: python translate_strings.py
