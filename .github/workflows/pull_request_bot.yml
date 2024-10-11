@@ -29,6 +29,9 @@ jobs:
     - name: Translate strings.xml
       run: |
         python scripts/translate_strings.py
+        
+    - name: Check if strings_fr.xml was created
+      run: ls -R android/app/src/main/res/values-fr
 
     - name: Commit and push changes
       run: |
