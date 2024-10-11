@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">StringTranslation</string>
+    <string name="nervermind_name">Peu importe les textes anglais pour les débutants.Pourquoi?</string>
+</resources>
