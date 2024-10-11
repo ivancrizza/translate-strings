@@ -50,6 +50,6 @@ jobs:
       run: |
         COMMENT=$(echo -e ":robot: French translations added:\n\n\`\`\`\n$(cat android/app/src/main/res/values-fr/strings_fr.xml)\n\`\`\`")
         curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-             -H "Content-Type: application/json" \
+             -H "Accept: application/vnd.github+json" \
              -d "{\"body\": \"$COMMENT\"}" \
              "https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.pull_request.number }}/comments"
