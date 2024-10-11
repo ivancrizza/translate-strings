@@ -18,6 +18,9 @@ jobs:
       with:
         python-version: '3.x'
 
+    - name: List files in res/values directory
+      run: ls -R app/src/main/res/values
+
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
