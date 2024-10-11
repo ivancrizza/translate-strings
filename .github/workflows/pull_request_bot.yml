@@ -43,6 +43,4 @@ jobs:
         git config --local user.name "GitHub Actions"
         git add android/app/src/main/res/values-fr/strings_fr.xml
         git commit -m "Add French translation for strings.xml"
-        git push origin HEAD:${{ github.head_ref }}
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        git push https://x-access-token:${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/${{ github.repository }} HEAD:${{ github.head_ref }}
