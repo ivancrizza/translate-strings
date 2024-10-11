@@ -48,7 +48,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Post comment to PR
       run: |
-        COMMENT=":robot: French translations added:\n\n\`\`\`\n$(cat android/app/src/main/res/values-fr/strings_fr.xml)\n\`\`\`"
+        COMMENT=$(echo -e ":robot: French translations added:\n\n\`\`\`\n$(cat android/app/src/main/res/values-fr/strings_fr.xml)\n\`\`\`")
         curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
              -H "Content-Type: application/json" \
              -d "{\"body\": \"$COMMENT\"}" \
