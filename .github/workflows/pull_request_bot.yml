@@ -24,7 +24,7 @@ jobs:
         pip install googletrans==4.0.0-rc1 
 
     - name: Translate strings.xml
-      run: python translate_strings.py
+      run: python script.py
 
     - name: Commit and push changes
       run: |
