@@ -42,8 +42,8 @@ jobs:
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "GitHub Actions"
         git add android/app/src/main/res/values-fr/strings_fr.xml
-        git commit -m "Add French translation for strings.xml"
-        git pull --rebase origin ${{ github.head_ref }}  
-        git push origin HEAD:${{ github.head_ref }}     
+        git diff --cached --exit-code || git commit -m "Add French translation for strings.xml"
+        git pull --rebase origin ${{ github.head_ref }}
+        git push origin HEAD:${{ github.head_ref }}
       env:
         GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
