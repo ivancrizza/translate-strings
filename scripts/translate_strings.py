@@ -2,7 +2,7 @@ import xml.etree.ElementTree as ET
 from googletrans import Translator
 import os
 
-strings_file = os.path.join(os.getcwd(), 'app/src/main/res/values/strings.xml')
+strings_file = os.path.join(os.getcwd(), './android/app/src/main/res/values/strings.xml')
 
 
 def translate_text(text, target_language='fr'):
@@ -11,7 +11,7 @@ def translate_text(text, target_language='fr'):
     return translation.text
 
 
-output_file = 'app/src/main/res/values-fr/strings_fr.xml'
+output_file = './android/app/src/main/res/values-fr/strings_fr.xml'
 
 tree = ET.parse(strings_file)
 root = tree.getroot()
