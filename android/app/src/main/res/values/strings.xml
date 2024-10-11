@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">StringTranslation</string>
+    <string  name="TESTE"> TESTE </string>
 </resources>
