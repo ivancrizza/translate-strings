@@ -2,4 +2,5 @@
 <resources>
     <string name="app_name">StringTranslation</string>
     <string name="nervermind_name">Peu importe les textes anglais pour les débutants.Pourquoi?</string>
+    <string name="chief">Le vrai voyage de la découverte ne consiste pas à rechercher de nouveaux paysages, mais à avoir de nouveaux yeux.</string>
 </resources>
