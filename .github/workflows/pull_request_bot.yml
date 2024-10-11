@@ -25,7 +25,7 @@ jobs:
 
     - name: Translate strings.xml
       run: |
-        python translate_strings.py
+        python scripts/translate_strings.py
 
     - name: Commit and push changes
       run: |
